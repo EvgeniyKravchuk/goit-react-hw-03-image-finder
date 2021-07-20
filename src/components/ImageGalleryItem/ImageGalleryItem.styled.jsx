@@ -4,6 +4,8 @@ export const Item = styled.li`
   width: 330px;
   height: 200px;
   margin-bottom: 10px;
+
+  cursor: pointer;
 `;
 
 export const Image = styled.img`

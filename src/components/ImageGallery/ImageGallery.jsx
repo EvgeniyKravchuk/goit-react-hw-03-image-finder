@@ -54,6 +54,7 @@ export default class ImageGallery extends Component {
               hideLoader={hideLoader}
               search={search}
               page={page}
+              scroll={this.scroll}
             />
           </List>
         </Section>

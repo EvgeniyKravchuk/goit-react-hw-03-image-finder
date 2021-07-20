@@ -18,7 +18,7 @@ export default class ImageGalleryItem extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    const { search, page } = this.props;
+    const { search, page, scroll } = this.props;
 
     if (prevProps.search !== search) {
       this.setState({
@@ -29,7 +29,7 @@ export default class ImageGalleryItem extends Component {
     }
 
     if (prevProps.page !== page) {
-      this.fetchImagesByName().then(this.scroll);
+      this.fetchImagesByName().then(scroll);
     }
   }
 
